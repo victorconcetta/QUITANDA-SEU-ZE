@@ -1,9 +1,7 @@
 import * as S from './subpaginas.styles.jsx'
-import * as Page from './contato.styles.jsx'
 import DivComum from '../components/DivComum.jsx'
 import styled from 'styled-components'
-import { FaMobileAlt } from "react-icons/fa";
-
+import { MdAttachMoney } from "react-icons/md";
 
 const DivComumFull = styled(DivComum)`
   width: 95%;
@@ -16,14 +14,15 @@ function Home() {
 
 <S.Head>
     <S.VIcon>
-        <FaMobileAlt />
+<MdAttachMoney />
     </S.VIcon>
-  <h1>Contato</h1>
+  <h1>Ofertas da Semana</h1>
   </S.Head>
 
-<Page.Container>
+        <DivComumFull titulo="Contato">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </DivComumFull>
 
-  </Page.Container>
 
       </S.Container>
     </div>

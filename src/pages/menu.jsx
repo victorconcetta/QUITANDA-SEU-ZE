@@ -46,9 +46,9 @@ function fecharMenu() {
           </S.LiMenu>
 
           <S.LinhaVer />
-          <S.LiMenu><Link to="/contato" onClick={() => setSubProdutos(false)}>Ofertas</Link></S.LiMenu>
+          <S.LiMenu><Link to="/ofertas" onClick={() => setSubProdutos(false)}>Ofertas</Link></S.LiMenu>
           <S.LinhaVer />
-          <S.LiMenu><Link to="/contato" onClick={() => setSubProdutos(false)}>Unidades</Link></S.LiMenu>
+          <S.LiMenu><Link to="/unidades" onClick={() => setSubProdutos(false)}>Unidades</Link></S.LiMenu>
           <S.LinhaVer />
           <S.LiMenu><Link to="/contato" onClick={() => setSubProdutos(false)}>Contato</Link></S.LiMenu>
         </S.UlMenu>
@@ -102,9 +102,9 @@ function fecharMenu() {
         <S.LiSubMobile onClick={fecharMenu}>Café do Zé</S.LiSubMobile>
       </S.SubMobile>
       <S.LinhaHor />
-      <S.LiMenuMobile><Link to="/contato" onClick={fecharMenu}>Ofertas</Link></S.LiMenuMobile>
+      <S.LiMenuMobile><Link to="/ofertas" onClick={fecharMenu}>Ofertas</Link></S.LiMenuMobile>
       <S.LinhaHor />
-      <S.LiMenuMobile><Link to="/contato" onClick={fecharMenu}>Unidades</Link></S.LiMenuMobile>
+      <S.LiMenuMobile><Link to="/unidades" onClick={fecharMenu}>Unidades</Link></S.LiMenuMobile>
       <S.LinhaHor />
       <S.LiMenuMobile><Link to="/contato" onClick={fecharMenu}>Contato</Link></S.LiMenuMobile>
     </S.MenuMobile>

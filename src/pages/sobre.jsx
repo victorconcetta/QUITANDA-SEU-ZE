@@ -12,7 +12,9 @@ function Sobre() {
   return (
 <div className="Subpagina">
   <S.Container>
-    
+
+<S.Head>sdssf</S.Head>
+
 <DivComumFull titulo="Sobre">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </DivComumFull >

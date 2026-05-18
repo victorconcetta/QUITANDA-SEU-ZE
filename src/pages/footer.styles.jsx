@@ -10,7 +10,7 @@ align-items: center;
   margin: 0px;
   width: 100%;
   min-height: 300px;
-  background-color: var(--principal);
+  background-color: var(--principallight);
   background-image: url(${cerca});
  background-size: 400px;
   background-position: bottom;

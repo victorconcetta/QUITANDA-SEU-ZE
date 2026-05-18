@@ -45,10 +45,10 @@ export const DivLogo = styled.div`
 
 export const UlMenu = styled.ul`
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  width: 100%;
-  padding: 0;
+  width: 60%;
+  padding: 0px 30px;
   margin: 0;
   height: 100%;
   list-style: none;
@@ -72,9 +72,10 @@ export const LiMenu = styled.li`
   align-items: center;
   flex: 1;
   height: 100%;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
   transition: 0.3s;
+
   
   a{
     text-decoration: none;
@@ -87,7 +88,7 @@ export const LiMenu = styled.li`
 `
   export const LinhaVer = styled.span`
   width: 3px;
-  height: 70%;
+  height: 30%;
   background: #616161;
   border-radius: 10px;
 
@@ -143,7 +144,7 @@ export const ListaProdutosLi = styled.li`
   justify-content: center;
   padding: 10px 0px;
   margin: 0px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   transition: 0.5s;
   white-space: nowrap;  /* ← evita quebra de texto */

@@ -3,8 +3,10 @@ import './assets/globalstyle.css'
 import Home from './pages/home.jsx'
 import MenuPrincipal from './pages/menu.jsx'
 import Footer from './pages/footer.jsx'
-import Sobre from './pages/sobre.jsx'
+import Unidades from './pages/unidades.jsx'
+import Unidades from './pages/unidades.jsx'
 import Contato from './pages/contato.jsx'
+import Ofertas from './pages/ofertas.jsx'
 import ScrollToTop from "./components/ScrollToTop.jsx"
 import SocialBar from "./components/SocialBar.jsx"  // ← importe aqui
 
@@ -17,8 +19,9 @@ function App() {
         <SocialBar />  {/* ← adicione aqui */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/unidades" element={<Unidades />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/ofertas" element={<Ofertas />} />
         </Routes>
         <Footer />
       </div>
