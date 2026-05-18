@@ -4,7 +4,6 @@ import Home from './pages/home.jsx'
 import MenuPrincipal from './pages/menu.jsx'
 import Footer from './pages/footer.jsx'
 import Unidades from './pages/unidades.jsx'
-import Unidades from './pages/unidades.jsx'
 import Contato from './pages/contato.jsx'
 import Ofertas from './pages/ofertas.jsx'
 import ScrollToTop from "./components/ScrollToTop.jsx"
