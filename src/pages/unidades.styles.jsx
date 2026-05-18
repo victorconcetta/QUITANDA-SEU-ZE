@@ -8,7 +8,7 @@ export const Container = styled.div`
   justify-content: center;
   margin: 0px;
   width: 70%;
-  max-width: 1500px;
+  max-width: 1300px;
   min-width: 900px;
   height: auto;
 padding-top: 80px;
@@ -30,13 +30,18 @@ export const Loja = styled.div`
   img {
     width: 100%;
     display: block;
-    opacity: 0.9;
+    opacity: 0.7;
     transition: opacity 0.3s ease;
+
+       @media (max-width: 900px) {
+ opacity: 1;
+       }
   }
 
   p {
     position: absolute;
     top: 0px;
+    width: 100%;
     left: 0px;
     font-size: 20px;
     color: white;
@@ -53,7 +58,8 @@ export const Loja = styled.div`
  } 
 
    @media (max-width: 900px) {
-    width: 100%;  /* ← cada card ocupa a linha inteira */
+    width: 100%;
+
   }
 `
 export const LojaInfo = styled.div`

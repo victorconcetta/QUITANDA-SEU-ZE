@@ -15,7 +15,7 @@ function App() {
       <div className="Container">
         <ScrollToTop />
         <MenuPrincipal />
-        <SocialBar />  {/* ← adicione aqui */}
+        <SocialBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/unidades" element={<Unidades />} />
