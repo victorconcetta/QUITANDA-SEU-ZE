@@ -36,7 +36,7 @@ function Home() {
 
   <S.Container>
     <S.Ofertas>
-<Link to="/sobre"><p>CONFIRA NOSSAS OFERTAS DA SEMANA!</p></Link>
+<Link to="/ofertas"><p>CONFIRA NOSSAS OFERTAS DA SEMANA!</p></Link>
 </S.Ofertas>
 
 
@@ -50,7 +50,6 @@ function Home() {
     <img src={fruta} alt="frutas" />
   </S.DivCentroImg>
 </S.DivCentro>
-<br />
 
 
 <S.Banner3>

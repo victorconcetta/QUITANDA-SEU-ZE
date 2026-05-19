@@ -32,14 +32,11 @@ export const DivCentro = styled.div`
   background: #e0e0e0;
 
 
-  
-
   @media (max-width: 1500px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-  
   }
 `
 export const DivCentroTexto = styled.div`
@@ -68,10 +65,10 @@ h1 {
  @media (max-width: 768px) {
     
    p {
-    font-size: 18px; 
+    font-size: 15px; 
    } 
    h1 { 
-    font-size: 21px; 
+    font-size: 18px; 
    }
   }
 `
@@ -115,6 +112,7 @@ export const Ofertas = styled.div`
   @media (max-width: 768px) {
    margin-top: 0px;
    padding: 0px;
+   height: 150px;
   }
 
     p {
@@ -125,9 +123,8 @@ export const Ofertas = styled.div`
 
 export const DivCentroImg = styled.div`
   flex: 1;
-  border-radius: 30px;
+  border-radius: 20px;
   overflow: hidden;
-  min-height: 300px;
   max-height: 400px;
 
   img {
@@ -148,10 +145,10 @@ export const DivCentroImg = styled.div`
 export const Banner3 = styled.div` 
 display: flex;
 justify-content: center;
+align-items: center;
   width: 70%;
-  padding-bottom: 40px;
-
  @media (max-width: 1500px) {
     width: 100%;
+    top: 0px;
  }
 `

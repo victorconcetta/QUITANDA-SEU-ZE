@@ -13,7 +13,7 @@ gap: 30px;
 padding: 100px 0px 150px;
 
 @media (max-width: 900px){
-padding: 100px 0px 150px;
+padding: 70px 0px 150px;
 }
 `
 export const Head = styled.div`
@@ -25,6 +25,10 @@ justify-content: space-evenly;
     height: 250px;
     background: var(--principallight);
 background-image: url(${back_head});
+
+@media (max-width: 768px) {
+      height: 150px;
+}
 
 h1 {
     font-size: clamp( 10px, 2vw, 50px);

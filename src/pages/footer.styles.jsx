@@ -17,7 +17,7 @@ align-items: center;
   background-repeat: repeat-x;
 
   p {
-    font-size: 20px;
+    font-size: clamp(14px, 3vw, 20px);
   }
 `
 export const DivDraw = styled.div`

@@ -44,7 +44,8 @@ width: 100%;
 padding-bottom: 10px;
 height: auto;
 overflow: hidden;
-`;
+font-size: clamp(8px, 3vw, 20px);
+`
 
 
 
