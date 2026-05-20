@@ -39,7 +39,6 @@ export const Loja = styled.div`
     width: 100%;
     display: block;
     transition: opacity 0.3s ease;
-
   }
 
   p {
@@ -53,8 +52,11 @@ export const Loja = styled.div`
     background: rgba(0, 0, 0, 0.5);
     padding: 12px 12px;
     border-radius: 4px;
+  
+  @media (max-width: 900px) {
+    height: 30px;
   }
-
+  }
  &:hover img{
     opacity: 1;
  }
