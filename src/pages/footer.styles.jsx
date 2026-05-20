@@ -3,10 +3,9 @@ import cerca from '../assets/img/cerca.png'
 
 export const Container = styled.div`
 display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-  padding: 0px;
+justify-content: space-around;
+align-items: flex-start;
+  padding: 30px;
   margin: 0px;
   width: 100%;
   min-height: 300px;
@@ -16,22 +15,54 @@ align-items: center;
   background-position: bottom;
   background-repeat: repeat-x;
 
-  p {
-    font-size: clamp(14px, 3vw, 20px);
+
+    h1 {
+    font-size: clamp(18px, 4vw, 18px);
   }
+  p {
+    font-size: clamp(10px, 3vw, 12px);
+    margin: 0px;
+  }
+
+ @media (max-width: 900px) {
+  flex-wrap: wrap;
+ } 
 `
-export const DivDraw = styled.div`
+
+export const Left = styled.div`
 display: flex;
 flex-direction: column;
-width: 200px;
+min-width: 200px;
+align-items: center;
+`
 
-align-self: stretch;
+export const Head = styled.div`
+display: flex;
+justify-content: center;
 
-svg{
-  width: 100%;
- flex: 1;
-  display: block;
-  fill: var(--bg);
+img {
+  width: 100px;
 }
-`;
+`
+export const Right = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 50px 0;
+min-width: 200px;
+
+ul {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: left;
+  list-style: none;
+
+  @media (max-width: 900px) {
+    font-size: 12px;
+}
+}
+`
 

@@ -7,19 +7,27 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0px;
-  width: 70%;
+  width: 60%;
   max-width: 1300px;
   min-width: 900px;
   height: auto;
-padding-top: 80px;
+padding-top: 20px;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 3px;
 
   @media (max-width: 900px) {
     min-width: unset;
     width: 90%;
   }
 `
+export const Texto = styled.p`
+
+padding: 0px;
+margin-bottom: 40px;
+
+
+`
+
 export const Loja = styled.div`
   width: calc(33.333% - 14px);
   flex-shrink: 0;
@@ -30,23 +38,20 @@ export const Loja = styled.div`
   img {
     width: 100%;
     display: block;
-    opacity: 0.7;
     transition: opacity 0.3s ease;
 
-       @media (max-width: 900px) {
- opacity: 1;
-       }
   }
 
   p {
     position: absolute;
     top: 0px;
     width: 100%;
+    height: 100%;
     left: 0px;
-    font-size: 20px;
+    font-size: clamp(22px, 2vw, 26px);
     color: white;
     background: rgba(0, 0, 0, 0.5);
-    padding: 4px 8px;
+    padding: 12px 12px;
     border-radius: 4px;
   }
 
@@ -71,7 +76,7 @@ export const LojaInfo = styled.div`
   background: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 16px;
-  transition: bottom 0.3s ease;
+  transition: bottom 0.6s ease;
 
   p {
     position: static;

@@ -7,18 +7,14 @@ flex-direction: column;
   min-height: 300px;
   height: auto;
   border-radius: 30px;
-  border: 15px solid var(--principal);
+  border: 12px solid var(--principal);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  
-  @media (max-width: 1500px) {
- width: 100% !important;
- border: 10px solid var(--principal);
-  }
- @media (max-width: 1024px) {
- width: 100% !important;
- border: 10px solid var(--principal);
-  }
+  overflow: hidden;
 
+
+@media (max-width: 900px) {
+    border: 6px solid var(--principal);
+}
 `
 export const Content = styled.div`
 display: flex;
@@ -45,6 +41,9 @@ padding-bottom: 10px;
 height: auto;
 overflow: hidden;
 font-size: clamp(8px, 3vw, 20px);
+  border-radius: 10px 10px 0 0;
+  
+  
 `
 
 

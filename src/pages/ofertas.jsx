@@ -7,6 +7,7 @@ import semana from '../assets/img/semana.png'
 
 const DivComumFull = styled(DivComum)`
   width: auto;
+
 `
 
 function Home() {
@@ -20,11 +21,11 @@ function Home() {
     </S.VIcon>
   <h1>Ofertas da Semana</h1>
   </S.Head>
-
+<Page.Oferta>
         <DivComumFull titulo="Confira as ofertas da semana do Seu Zé">
           <Page.Imagem src={ semana } />
         </DivComumFull>
-
+</Page.Oferta>
 
       </S.Container>
     </div>

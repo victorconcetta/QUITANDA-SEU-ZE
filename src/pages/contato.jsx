@@ -24,6 +24,7 @@ function Home() {
         </S.Head>
 
         <Page.Container>
+          <Page.Head>
           <Page.Div>
             <Page.DivHead><h1><FaWhatsapp /></h1><h2>Central de atendimento</h2></Page.DivHead>
             <Page.DivText><p>(14) 99693-9090 - WhatsApp</p></Page.DivText>
@@ -37,16 +38,18 @@ function Home() {
             <Page.Div>
             <Page.DivHead><h1><FaTruck /></h1><h2>Fornecedores</h2></Page.DivHead>
             <Page.DivText><p>(14) 99693-8080 - WhatsApp</p>
-            <p>sejafornecedor@seuze.com.br</p></Page.DivText>
+            <p>fornecedor@seuze.com.br</p></Page.DivText>
           </Page.Div>
+          </Page.Head>
 
+<Page.Unidades>
 <UnidadeCard
   titulo="Loja Simpatia"
   descricao={
     <>
-    <p>Endereço: Rua Winifrida, 345</p>
-    <p>WhatsApp / Telefone: (14)99090-4123</p>
-    <p>E-mail: simpatia@seuze.com.br</p>
+    <PAGE.P>Endereço: Rua Winifrida, 345</PAGE.P>
+    <PAGE.P>WhatsApp / Telefone: (14)99090-4123</PAGE.P>
+    <PAGE.P>E-mail: simpatia@seuze.com.br</PAGE.P>
     </>
     }
   imagem={loja_barrabonita}
@@ -57,9 +60,9 @@ function Home() {
   titulo="Loja Sem Limites"
   descricao={
     <>
-    <p>Endereço: Rua Gerson França, 15-23</p>
-    <p>WhatsApp / Telefone: (14)99090-2088</p>
-    <p>E-mail: semlimites@seuze.com.br</p>
+    <PAGE.P>Endereço: Rua Gerson França, 15-23</PAGE.P>
+    <PAGE.P>WhatsApp / Telefone: (14)99090-2088</PAGE.P>
+    <PAGE.P>E-mail: semlimites@seuze.com.br</PAGE.P>
     </>
     }
   imagem={loja_semlimites}
@@ -70,9 +73,9 @@ function Home() {
   titulo="Loja Prudente"
   descricao={
     <>
-    <p>Endereço: Rua Prudente de Moraes, 454</p>
-    <p>WhatsApp / Telefone: (14)99490-4293</p>
-    <p>E-mail: prudente@seuze.com.br</p>
+    <PAGE.P>Endereço: Rua Prudente de Moraes, 454</PAGE.P>
+    <PAGE.P>WhatsApp / Telefone: (14)99490-4293</PAGE.P>
+    <PAGE.P>E-mail: prudente@seuze.com.br</PAGE.P>
     </>
     }
   imagem={loja_marilia}
@@ -83,9 +86,9 @@ function Home() {
   titulo="Loja Macatuba"
   descricao={
     <>
-    <p>Endereço: Rua Osório Peixoto, 1123</p>
-    <p>WhatsApp / Telefone: (14)99050-3311</p>
-    <p>E-mail: macatuba@seuze.com.br</p>
+    <PAGE.P>Endereço: Rua Osório Peixoto, 1123</PAGE.P>
+    <PAGE.P>WhatsApp / Telefone: (14)99050-3311</PAGE.P>
+    <PAGE.P>E-mail: macatuba@seuze.com.br</PAGE.P>
     </>
     }
   imagem={loja_macatuba}
@@ -96,15 +99,15 @@ function Home() {
   titulo="Loja Brasil"
   descricao={
     <>
-    <p>Endereço: Av. Brasil, 557</p>
-    <p>WhatsApp / Telefone: (14)99090-4013</p>
-    <p>E-mail: brasil@seuze.com.br</p>
+    <PAGE.P>Endereço: Av. Brasil, 557</PAGE.P>
+    <PAGE.P>WhatsApp / Telefone: (14)99090-4013</PAGE.P>
+    <PAGE.P>E-mail: brasil@seuze.com.br</PAGE.P>
     </>
     }
   imagem={loja_brasil}
   altImagem="Loja Pederneiras"
 />
-
+</Page.Unidades>
         </Page.Container>
       </S.Container>
     </div>

@@ -41,16 +41,23 @@ p {
 
 }
 
+ @media (max-width: 768px) {
+Padding: 10px;
+ }
 `
 export const TextoHead = styled.div`
 width: 100%;
-font-size: clamp(40px, 4vw, 60px)
+font-size: clamp(20px, 2vw, 28px);
 `
 export const TextoCont = styled.div`
 width: 100%;
 
 p {
-  font-size: clamp(20px, 1.5vw, 20px)
+  font-size: clamp(8px,2vw, 16px);
+
+  @media (max-width: 768px) {
+      font-size: 10px;
+  }
 }
 
 `

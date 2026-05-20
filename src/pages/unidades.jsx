@@ -29,6 +29,11 @@ function Home() {
   </S.Head>
 
   <Page.Container>
+    <Page.Texto><strong>A Quitanda Seu Zé está sempre perto de você!</strong><br /><br />
+Nascida no interior paulista, a Quitanda Seu Zé cresceu junto com a nossa gente e hoje está presente em vários pontos da região — sempre pertinho de você, com frutas, legumes e verduras fresquinhos, direto da roça para a sua mesa.
+Venha nos visitar na unidade mais próxima!</Page.Texto>
+
+
 <Page.Loja>
   <img src={loja_barrabonita} alt="Loja Barra Bonita" />
   <p>LOJA SIMPATIA<br />

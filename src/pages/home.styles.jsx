@@ -30,12 +30,14 @@ export const DivCentro = styled.div`
   align-items: center;
   padding: 20px 10%;
   background: #e0e0e0;
+  padding: 20px 25%;
 
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1280px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 30px 20%;
 
   }
 `
@@ -45,20 +47,24 @@ export const DivCentroTexto = styled.div`
   align-items: center;
   text-align: left;
 
+
 h1 {
     color: var(--principaldarker);
     padding-bottom: 20px;
 
 }
      p {
-    font-size: 24px;
+    font-size: clamp(10px, 2vw, 16px);
    } 
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1280px) {
     width: 100%;
-    
+
+  h1 { 
+    font-size: 24px; 
+   }
    p {
-    font-size: 22px;
+    font-size: 18px;
    } 
   }
 
@@ -94,8 +100,8 @@ export const Ofertas = styled.div`
     opacity: 0.85;
   }
 
-  p {
-    font-size: 1vw;
+ p {
+    font-size: clamp(16px, 2vw, 40px);
     font-weight: 600;
     position: relative;
     z-index: 1;
@@ -115,9 +121,6 @@ export const Ofertas = styled.div`
    height: 150px;
   }
 
-    p {
-    font-size: 3vw;
-    }
 
 `
 

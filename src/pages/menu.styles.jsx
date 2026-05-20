@@ -22,7 +22,7 @@ export const DivLogo = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 140px;
+  width: 120px;
   margin-left: 50px;
 
   img {
@@ -72,7 +72,7 @@ export const LiMenu = styled.li`
   align-items: center;
   flex: 1;
   height: 100%;
-  font-size: 1.3rem;
+  font-size: clamp(12px, 2vw, 16px);
   font-weight: 500;
   transition: 0.3s;
 
@@ -222,7 +222,7 @@ export const LiMenuMobile = styled.li`
   align-items: center;
   flex: 1;
   height: 100%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding: 8px;
   transition: 0.3s;
 
@@ -233,7 +233,7 @@ export const LiMenuMobile = styled.li`
   }
 
  &:hover {
-  transform: scale(1.1);
+  color: #8a8a8a;
 }
 `
 

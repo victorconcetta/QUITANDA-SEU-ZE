@@ -22,16 +22,16 @@ flex-direction: column;
 align-items: center;
 justify-content: space-evenly;
     width: 100%;
-    height: 250px;
+    height: 200px;
     background: var(--principallight);
 background-image: url(${back_head});
 
 @media (max-width: 768px) {
-      height: 150px;
+      height: 120px;
 }
 
 h1 {
-    font-size: clamp( 10px, 2vw, 50px);
+    font-size: clamp( 18px, 3vw, 40px);
     padding: 0px;
     color: var(--principaldarker);
 }
@@ -39,6 +39,6 @@ h1 {
 export const VIcon = styled.div`
   svg {
     color: var(--principaldarker);
-    font-size: 5rem;
+    font-size: clamp( 40px, 6vw, 70px);
   }
 `
