@@ -4,6 +4,7 @@ import DivComum from '../components/DivComum.jsx'
 import styled from 'styled-components'
 import { MdAttachMoney } from "react-icons/md";
 import semana from '../assets/img/semana.png'
+import ImagemZoom from '../components/ImagemZoom.jsx'
 
 const DivComumFull = styled(DivComum)`
   width: auto;
@@ -23,7 +24,7 @@ function Home() {
   </S.Head>
 <Page.Oferta>
         <DivComumFull titulo="Confira as ofertas da semana do Seu Zé">
-          <Page.Imagem src={ semana } />
+<ImagemZoom src={semana} alt="Ofertas da semana" className={Page.Imagem} />
         </DivComumFull>
 </Page.Oferta>
 

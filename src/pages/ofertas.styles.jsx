@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import back_head from '../assets/img/back_head.png'
 
 
+
 export const Container = styled.div`
   display: flex;
   align-items: center;
