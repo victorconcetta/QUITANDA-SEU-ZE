@@ -54,7 +54,7 @@ export const Loja = styled.div`
     border-radius: 4px;
   
   @media (max-width: 900px) {
-    height: 30px;
+    height: auto;
   }
   }
  &:hover img{

@@ -131,7 +131,7 @@ export const Ofertas = styled.div`
 
 export const DivCentroImg = styled.div`
   flex: 1;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   max-height: 400px;
 
@@ -141,6 +141,7 @@ export const DivCentroImg = styled.div`
     object-fit: cover;
     display: block;
     opacity: 0.85;
+    
   }
 
   @media (max-width: 1500px) {
@@ -150,9 +151,10 @@ export const DivCentroImg = styled.div`
 
   }
     @media (max-width: 768px) {
-    width:60%;
+    width:100%;
     height: 300px;
     max-height: 300px;
+    aspect-ratio: 2.1;
 
   }
 `
