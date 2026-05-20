@@ -38,7 +38,12 @@ export const DivCentro = styled.div`
     align-items: center;
     justify-content: center;
     padding: 30px 20%;
-
+  }
+    @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 5%;
   }
 `
 export const DivCentroTexto = styled.div`
@@ -140,6 +145,12 @@ export const DivCentroImg = styled.div`
 
   @media (max-width: 1500px) {
     width: 80%;
+    height: 300px;
+    max-height: 300px;
+
+  }
+    @media (max-width: 768px) {
+    width:60%;
     height: 300px;
     max-height: 300px;
 
