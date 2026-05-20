@@ -3,9 +3,9 @@ import cerca from '../assets/img/cerca.png'
 
 export const Container = styled.div`
 display: flex;
-justify-content: space-around;
+justify-content: space-evenly;
 align-items: flex-start;
-  padding: 30px;
+  padding: 10px;
   margin: 0px;
   width: 100%;
   min-height: 300px;
@@ -26,6 +26,9 @@ align-items: flex-start;
 
  @media (max-width: 900px) {
   flex-wrap: wrap;
+
+align-items: center;
+padding-bottom: 100px;
  } 
 `
 
@@ -34,8 +37,14 @@ display: flex;
 flex-direction: column;
 min-width: 200px;
 align-items: center;
-`
 
+@media (max-width: 768px) {
+
+justify-content: flex-start;
+min-width: 0px;
+padding-bottom: 30px;
+}
+`
 export const Head = styled.div`
 display: flex;
 justify-content: center;
@@ -45,24 +54,65 @@ img {
 }
 `
 export const Right = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-padding: 50px 0;
-min-width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px 0;
+
+
+
+  ul {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+
+    @media (max-width: 900px) {
+      font-size: 12px;
+    }
+  }
+`
+
+export const Center = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 10px 0;
+
+  gap: 100px;
+
+  ul, li {
+font-size: 14px;
+gap: 0px;
+padding: 0px 5px;
+margin: 0px;
+align-items: flex-start;
+  }
+li:hover {
+  transform: none;
+}
+
+`
+
+export const UlMenu = styled.div`
+
+`
+
+export const LiMenu = styled.div`
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+`
+
+export const Produtos = styled.div`
 
 ul {
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-justify-content: center;
-align-items: left;
-  list-style: none;
-
-  @media (max-width: 900px) {
-    font-size: 12px;
-}
+display: flex;
+flex-direction: column;
 }
 `
 

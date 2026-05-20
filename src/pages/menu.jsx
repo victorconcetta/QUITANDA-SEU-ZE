@@ -3,6 +3,19 @@ import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import logo from "../assets/img/logo.png"
 
+export function ListaProdutos ({ itemComponent: Item = S.ListaProdutosLi, onItemClick }) {
+  return (
+    <S.ListaProdutos>
+      <Item onClick={onItemClick}>Hortaliças</Item>
+      <Item onClick={onItemClick}>Legumes</Item>
+      <Item onClick={onItemClick}>Frutas</Item>
+      <Item onClick={onItemClick}>Frutas Exóticas</Item>
+      <Item onClick={onItemClick}>Doces do Campo</Item>
+      <Item onClick={onItemClick}>Que-Queijo</Item>
+      <Item onClick={onItemClick}>Café do Zé</Item>
+    </S.ListaProdutos>
+  )
+}
 
 function MenuPrincipal() {
   const [aberto, setAberto] = useState(false)
@@ -65,15 +78,7 @@ function fecharMenu() {
           onMouseEnter={() => setSubProdutos(true)}
           onMouseLeave={() => setSubProdutos(false)}
         >
-          <S.ListaProdutos>
-            <S.ListaProdutosLi>Hortaliças</S.ListaProdutosLi>
-            <S.ListaProdutosLi>Legumes</S.ListaProdutosLi>
-            <S.ListaProdutosLi>Frutas</S.ListaProdutosLi>
-            <S.ListaProdutosLi>Frutas Exóticas</S.ListaProdutosLi>
-            <S.ListaProdutosLi>Doces do Campo</S.ListaProdutosLi>
-            <S.ListaProdutosLi>Que-Queijo</S.ListaProdutosLi>
-            <S.ListaProdutosLi>Café do Zé</S.ListaProdutosLi>
-          </S.ListaProdutos>
+   <ListaProdutos />
         </S.SubProdutos>
       )}
 
@@ -85,22 +90,9 @@ function fecharMenu() {
       <S.LiMenuMobile onClick={() => setSubMobile(!subMobile)}>
         Produtos <S.SetaIcon $aberto={subMobile}>▼</S.SetaIcon>
       </S.LiMenuMobile>
-      <S.SubMobile $aberto={subMobile}>
-        <S.LinhaHor />
-        <S.LiSubMobile onClick={fecharMenu}>Hortaliças</S.LiSubMobile>
-        <S.LinhaHor />
-        <S.LiSubMobile onClick={fecharMenu}>Legumes</S.LiSubMobile>
-        <S.LinhaHor />
-        <S.LiSubMobile onClick={fecharMenu}>Frutas</S.LiSubMobile>
-        <S.LinhaHor />
-        <S.LiSubMobile onClick={fecharMenu}>Frutas Exóticas</S.LiSubMobile>
-        <S.LinhaHor />
-        <S.LiSubMobile onClick={fecharMenu}>Doces do Campo</S.LiSubMobile>
-        <S.LinhaHor />
-        <S.LiSubMobile onClick={fecharMenu}>Que-Queijo</S.LiSubMobile>
-        <S.LinhaHor />
-        <S.LiSubMobile onClick={fecharMenu}>Café do Zé</S.LiSubMobile>
-      </S.SubMobile>
+<S.SubMobile $aberto={subMobile}>
+  <ListaProdutos />
+</S.SubMobile>
       <S.LinhaHor />
       <S.LiMenuMobile><Link to="/ofertas" onClick={fecharMenu}>Ofertas</Link></S.LiMenuMobile>
       <S.LinhaHor />

@@ -29,7 +29,7 @@ function ImagemZoom({ src, alt }) {
                         src={src}
                         alt={alt}
                         style={{
-                            width: '150%',
+                            width: '100%',
                             display: 'block',
                             margin: '0 auto',
                         }}

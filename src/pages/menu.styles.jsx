@@ -132,9 +132,8 @@ export const ListaProdutos = styled.ul`
 
   @media (max-width: 900px) {
     justify-content: flex-start;
-    padding: 0px 14px;
-    gap: 24px;
-    width: max-content; 
+    flex-direction: column;
+    padding: 0px;
   }
 `
 
@@ -147,7 +146,7 @@ export const ListaProdutosLi = styled.li`
   font-size: 20px;
   font-weight: 500;
   transition: 0.5s;
-  white-space: nowrap;  /* ← evita quebra de texto */
+  white-space: nowrap;
 
   &:hover {
     transform: scale(1.05);
@@ -161,7 +160,7 @@ export const ListaProdutosLi = styled.li`
 
   @media (max-width: 900px) {
     font-size: 16px;
-    padding: 8px 10px;
+    padding: 0px;
   }
 `
 
