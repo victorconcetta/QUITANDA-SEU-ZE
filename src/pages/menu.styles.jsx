@@ -62,7 +62,7 @@ export const UlMenu = styled.ul`
 export const Linha = styled.span`
   width: 100%;
   height: 3px;
-  background: #616161;
+  background: var(--principaldarker);
   border-radius: 3px;
 `
 
@@ -241,7 +241,7 @@ export const LiMenuMobile = styled.li`
   export const LinhaHor = styled.span`
   width: 70%;
   height: 2px;
-  background: #616161;
+  background: #61616130;
   border-radius: 3px;
 
 `;
