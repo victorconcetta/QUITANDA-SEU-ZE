@@ -47,9 +47,9 @@ function Home() {
   titulo="Loja Simpatia"
   descricao={
     <>
-    <PAGE.P>Endereço: Rua Winifrida, 345</PAGE.P>
-    <PAGE.P>WhatsApp / Telefone: (14)99090-4123</PAGE.P>
-    <PAGE.P>E-mail: simpatia@seuze.com.br</PAGE.P>
+    <p>Endereço: Rua Winifrida, 345</p>
+    <p>WhatsApp / Telefone: (14)99090-4123</p>
+    <p>E-mail: simpatia@seuze.com.br</p>
     </>
     }
   imagem={loja_barrabonita}
@@ -60,9 +60,9 @@ function Home() {
   titulo="Loja Sem Limites"
   descricao={
     <>
-    <PAGE.P>Endereço: Rua Gerson França, 15-23</PAGE.P>
-    <PAGE.P>WhatsApp / Telefone: (14)99090-2088</PAGE.P>
-    <PAGE.P>E-mail: semlimites@seuze.com.br</PAGE.P>
+    <p>Endereço: Rua Gerson França, 15-23</p>
+    <p>WhatsApp / Telefone: (14)99090-2088</p>
+    <p>E-mail: semlimites@seuze.com.br</p>
     </>
     }
   imagem={loja_semlimites}
@@ -73,9 +73,9 @@ function Home() {
   titulo="Loja Prudente"
   descricao={
     <>
-    <PAGE.P>Endereço: Rua Prudente de Moraes, 454</PAGE.P>
-    <PAGE.P>WhatsApp / Telefone: (14)99490-4293</PAGE.P>
-    <PAGE.P>E-mail: prudente@seuze.com.br</PAGE.P>
+    <p>Endereço: Rua Prudente de Moraes, 454</p>
+    <p>WhatsApp / Telefone: (14)99490-4293</p>
+    <p>E-mail: prudente@seuze.com.br</p>
     </>
     }
   imagem={loja_marilia}
@@ -86,9 +86,9 @@ function Home() {
   titulo="Loja Macatuba"
   descricao={
     <>
-    <PAGE.P>Endereço: Rua Osório Peixoto, 1123</PAGE.P>
-    <PAGE.P>WhatsApp / Telefone: (14)99050-3311</PAGE.P>
-    <PAGE.P>E-mail: macatuba@seuze.com.br</PAGE.P>
+    <p>Endereço: Rua Osório Peixoto, 1123</p>
+    <p>WhatsApp / Telefone: (14)99050-3311</p>
+    <p>E-mail: macatuba@seuze.com.br</p>
     </>
     }
   imagem={loja_macatuba}
@@ -99,9 +99,9 @@ function Home() {
   titulo="Loja Brasil"
   descricao={
     <>
-    <PAGE.P>Endereço: Av. Brasil, 557</PAGE.P>
-    <PAGE.P>WhatsApp / Telefone: (14)99090-4013</PAGE.P>
-    <PAGE.P>E-mail: brasil@seuze.com.br</PAGE.P>
+    <p>Endereço: Av. Brasil, 557</p>
+    <p>WhatsApp / Telefone: (14)99090-4013</p>
+    <p>E-mail: brasil@seuze.com.br</p>
     </>
     }
   imagem={loja_brasil}
