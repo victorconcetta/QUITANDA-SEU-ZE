@@ -22,10 +22,10 @@ function Footer() {
 
    <S.UlMenu>
             <h1>Menu</h1>
-          <S.LiMenu><Link to="/" onClick={() => setSubProdutos(false)}>Home</Link></S.LiMenu>
-          <S.LiMenu><Link to="/ofertas" onClick={() => setSubProdutos(false)}>Ofertas</Link></S.LiMenu>
-          <S.LiMenu><Link to="/unidades" onClick={() => setSubProdutos(false)}>Unidades</Link></S.LiMenu>
-          <S.LiMenu><Link to="/contato" onClick={() => setSubProdutos(false)}>Contato</Link></S.LiMenu>
+ <S.LiMenu><Link to="/">Home</Link></S.LiMenu>
+<S.LiMenu><Link to="/ofertas">Ofertas</Link></S.LiMenu>
+<S.LiMenu><Link to="/unidades">Unidades</Link></S.LiMenu>
+<S.LiMenu><Link to="/contato">Contato</Link></S.LiMenu>
         </S.UlMenu>
 <S.Produtos>
 <h1>Produtos</h1>
