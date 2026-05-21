@@ -25,7 +25,9 @@ export const Texto = styled.p`
 padding: 0px;
 margin-bottom: 40px;
 
-
+  @media (max-width: 768px) {
+font-size: 13px;
+  }
 `
 
 export const Loja = styled.div`

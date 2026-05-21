@@ -33,11 +33,11 @@ export const DivLogo = styled.div`
   @media (max-width: 900px) {
     min-width: 120px;
     width: 150px;
-      margin-left: 20px;
+    margin-left: 0px;
    
 
     img {
-      height: 70px;
+      height: 50px;
       width: 100%;
     }
   }
@@ -125,7 +125,7 @@ export const ListaProdutos = styled.ul`
   margin: 0px;
   padding: 0px 50px;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1280px) {
     padding: 0px 20px;
     gap: 10px;
   }
@@ -144,7 +144,7 @@ export const ListaProdutosLi = styled.li`
   padding: 10px 0px;
   margin: 0px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   transition: 0.5s;
   white-space: nowrap;
 
