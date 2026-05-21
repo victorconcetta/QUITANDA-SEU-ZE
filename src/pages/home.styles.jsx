@@ -167,6 +167,22 @@ export const Ofertas = styled.div`
    padding: 0px;
    height: 150px;
   }
-
-
 `
+
+export const ContainerSwiperProd = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  width: 80%;
+  align-self: stretch;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 0px;
+
+  h1 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+`;

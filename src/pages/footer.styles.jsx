@@ -3,26 +3,9 @@ import cerca from '../assets/img/cerca.png'
 
 export const Container = styled.div`
 display: flex;
-justify-content: space-evenly;
-align-items: flex-start;
-  padding: 10px 10%;
-  margin: 0px;
-  width: 100%;
-  min-height: 300px;
+flex-direction: column;
   background-color: var(--principallight);
-  background-image: url(${cerca});
- background-size: 400px;
-  background-position: bottom;
-  background-repeat: repeat-x;
 
-
-    h1 {
-    font-size: clamp(18px, 4vw, 18px);
-  }
-  p {
-    font-size: clamp(10px, 3vw, 12px);
-    margin: 0px;
-  }
 
  @media (max-width: 900px) {
   flex-wrap: wrap;
@@ -68,7 +51,6 @@ export const Center = styled.div`
   flex: 1;
   padding: 10px 0;
 
-
   ul, li {
 gap: 0px;
 padding: 0px 5px;
@@ -78,11 +60,14 @@ align-items: flex-start;
   }
 li:hover {
   transform: none;
+  color: #7c7c7c;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
 min-width: 300px;
-padding-bottom: 80px;
+padding-bottom: 30px;
 
 h1 {
   font-size: 14px;
@@ -100,11 +85,18 @@ export const LiMenu = styled.div`
     text-decoration: none;
     color: inherit;
     font-size: 14px;
+  }
+  a:hover {
+  transform: none;
+  color: #7c7c7c;
+  font-weight: 500;
+  cursor: pointer;
+}
   
 @media (max-width: 768px) {
     font-size: 11px;
   }
-}
+
 `
 
 export const Produtos = styled.div`
@@ -155,5 +147,74 @@ export const Right = styled.div`
     font-size: 11px;
 padding-bottom: 30px;
 }
+  }
+`
+
+export const Start = styled.div`
+display: flex;
+justify-content: space-evenly;
+align-items: flex-start;
+padding: 10px 10%;
+  margin: 0px;
+  width: 100%;
+  min-height: 200px;
+
+
+    h1 {
+    font-size: clamp(18px, 4vw, 18px);
+  }
+  p {
+    font-size: clamp(10px, 3vw, 12px);
+    margin: 0px;
+  }
+
+ @media (max-width: 900px) {
+  flex-wrap: wrap;
+padding-bottom: 10px;
+  padding: 10px 3%;
+ } 
+
+  @media (max-width: 768px) {
+  flex-wrap: wrap;
+padding-bottom: 10px;
+  padding: 10px 10px;
+ }
+`
+
+export const End = styled.div`
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-direction: column;
+width: 100%;
+min-height: 100px;
+  background-image: url(${cerca});
+ background-size: 400px;
+  background-position: bottom;
+  background-repeat: repeat-x;
+
+  img {
+    width: 180px;
+    height: auto;
+    padding-top: 30px;
+
+    @media (max-width: 768px) {
+      padding-top: 0px;
+    }
+
+  }
+
+  p {
+    margin: 0px;
+    padding-top: 0px;
+    font-size: 14px;
+    top: 0px;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 `

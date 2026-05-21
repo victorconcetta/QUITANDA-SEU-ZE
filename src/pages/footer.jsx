@@ -2,12 +2,14 @@ import * as S from './footer.styles.jsx'
 import logo from "../assets/img/logo.png"
 import { Link, useLocation } from 'react-router-dom'
 import { ListaProdutos } from './menu.jsx'
+import vc from "../assets/img/vc.png"
 
 function Footer() {
 
   return (
     <>
       <S.Container>
+        <S.Start>
         <S.Left>
           <S.Head><img src={logo} /></S.Head><br />
           <h1>QUITANDA SEU ZÉ</h1>
@@ -41,7 +43,14 @@ function Footer() {
             <li>Brasil - Pederneiras/SP</li>
           </ul>
         </S.Right>
+        </S.Start>
+        <S.End>
+          <img src={vc} alt="logo empresa VC Soluções Tecnológicas" />
+  <p>© 2026 VC Soluções Tecnológicas — Soluções modernas para empresas modernas.</p>
+</S.End>
       </S.Container>
+    
+
 
     </>
   )

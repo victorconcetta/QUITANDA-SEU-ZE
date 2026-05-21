@@ -2,6 +2,7 @@
 import * as S from './home.styles.jsx'
 import DivComum from '../components/DivComum.jsx'
 import SwiperMod from '../components/SwiperMod.jsx'
+import SwiperProd from '../components/SwiperProd.jsx'
 import BannerFull from '../components/BannerFull.jsx'
 import BannerImagemFull from '../components/BannerImagemFull.jsx'
 import Banner3Quadrados from '../components/Banner3Quadrados.jsx'
@@ -10,9 +11,13 @@ import slide2 from "../assets/img/slide4.png"
 import slide3 from "../assets/img/slide3.png"
 import slide4 from "../assets/img/slide4.png"
 import slide5 from "../assets/img/slide5.png"
-import horta from "../assets/img/horta.png"
-import verduras from "../assets/img/verduras.png"
-import frutas from "../assets/img/frutas.png"
+import horta from "../assets/img/produtos/produtos_horta.png"
+import cafe from "../assets/img/produtos/produtos_cafe.png"
+import verduras from "../assets/img/produtos/produtos_verduras.png"
+import frutas from "../assets/img/produtos/produtos_frutas.png"
+import docesdocampo from "../assets/img/produtos/produtos_docesdocampo.png"
+import quequeijo from "../assets/img/produtos/produtos_quequeijo.png"
+import frutasexoticas from "../assets/img/produtos/produtos_frutasexoticas.png"
 import fruta from "../assets/img/fruta.png"
 import campo from "../assets/img/campo.webp"
 import { Content } from '../components/DivComum.styles.jsx'
@@ -51,14 +56,29 @@ function Home() {
   </S.DivCentroImg>
 </S.DivCentro>
 
+<S.ContainerSwiperProd>
+  <h1>Confira os Nossos Produtos:</h1>
+  <SwiperProd
+    imagens={[
+      verduras,
+      horta,
+      frutas,
+       cafe,
+      frutasexoticas,
+      docesdocampo,
+      quequeijo,
+      verduras,
+      horta,
+      frutas,
+       cafe,
+      frutasexoticas,
+      docesdocampo,
+      quequeijo,
+    ]}
+  />
+</S.ContainerSwiperProd>
 
-<S.Banner3>
-<Banner3Quadrados style={{ opacity: '0.75' }}
-  src1={verduras}
-  src2={horta}
-  src3={frutas}
-/>
-</S.Banner3>
+
     <S.DivCentro>
         <S.DivCentroImg>
     <img src={campo} alt="campo" />
