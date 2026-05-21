@@ -34,10 +34,9 @@ export const DivCentro = styled.div`
 
 
   @media (max-width: 1280px) {
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px 20%;
+    padding: 30px 5%;
   }
     @media (max-width: 768px) {
     flex-direction: column;
@@ -56,6 +55,7 @@ export const DivCentroTexto = styled.div`
 h1 {
     color: var(--principaldarker);
     padding-bottom: 20px;
+        font-size: clamp(10px, 2vw, 20px);
 
 }
      p {
@@ -63,26 +63,68 @@ h1 {
    } 
 
   @media (max-width: 1280px) {
-    width: 100%;
 
   h1 { 
-    font-size: 24px; 
+    font-size: 20px; 
    }
    p {
-    font-size: 18px;
+    font-size: 15px;
    } 
   }
 
  @media (max-width: 768px) {
     
    p {
-    font-size: 15px; 
+    font-size: 12px; 
    } 
    h1 { 
-    font-size: 18px; 
+    font-size: 16px; 
    }
   }
 `
+
+
+export const DivCentroImg = styled.div`
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 400px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 2.1;
+    object-fit: cover;
+    display: block;
+    opacity: 0.85;
+    
+  }
+
+  @media (max-width: 1280px) {
+    width: 80%;
+    height: 300px;
+    max-height: 200px;
+
+  }
+    @media (max-width: 768px) {
+    width:100%;
+    height: 300px;
+    max-height: 300px;
+    aspect-ratio: 2.1;
+
+  }
+`
+export const Banner3 = styled.div` 
+display: flex;
+justify-content: center;
+align-items: center;
+  width: 70%;
+ @media (max-width: 1280px) {
+    width: 100%;
+    top: 0px;
+ }
+`
+
 
 export const Ofertas = styled.div`
   width: 100%;
@@ -127,44 +169,4 @@ export const Ofertas = styled.div`
   }
 
 
-`
-
-export const DivCentroImg = styled.div`
-  flex: 1;
-  border-radius: 10px;
-  overflow: hidden;
-  max-height: 400px;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    opacity: 0.85;
-    
-  }
-
-  @media (max-width: 1500px) {
-    width: 80%;
-    height: 300px;
-    max-height: 300px;
-
-  }
-    @media (max-width: 768px) {
-    width:100%;
-    height: 300px;
-    max-height: 300px;
-    aspect-ratio: 2.1;
-
-  }
-`
-export const Banner3 = styled.div` 
-display: flex;
-justify-content: center;
-align-items: center;
-  width: 70%;
- @media (max-width: 1500px) {
-    width: 100%;
-    top: 0px;
- }
 `

@@ -5,7 +5,7 @@ export const Container = styled.div`
 display: flex;
 justify-content: space-evenly;
 align-items: flex-start;
-  padding: 10px;
+  padding: 10px 10%;
   margin: 0px;
   width: 100%;
   min-height: 300px;
@@ -26,9 +26,14 @@ align-items: flex-start;
 
  @media (max-width: 900px) {
   flex-wrap: wrap;
-
-align-items: center;
 padding-bottom: 100px;
+  padding: 10px 3%;
+ } 
+
+  @media (max-width: 768px) {
+  flex-wrap: wrap;
+padding-bottom: 100px;
+  padding: 10px 10px;
  } 
 `
 
@@ -37,11 +42,13 @@ display: flex;
 flex-direction: column;
 min-width: 200px;
 align-items: center;
+padding: 10px 0;
+font-size: 14px;
 
 @media (max-width: 768px) {
 
 justify-content: flex-start;
-min-width: 0px;
+min-width: 300px;
 padding-bottom: 30px;
 }
 `
@@ -59,8 +66,16 @@ export const Right = styled.div`
   align-items: flex-start;
   flex-direction: column;
   padding: 10px 0;
+  font-size: 14px;
 
+    @media (max-width: 768px) {
 
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+
+    min-width: 300px;
+}
 
   ul {
     padding: 0px;
@@ -70,19 +85,20 @@ export const Right = styled.div`
     align-items: flex-start;
     list-style: none;
 
-    @media (max-width: 900px) {
-      font-size: 12px;
-    }
+    @media (max-width: 768px) {
+
+padding-bottom: 30px;
+}
   }
 `
 
 export const Center = styled.div`
   display: flex;
   align-items: flex-start;
-  gap: 40px;
+  justify-content: space-evenly;
+  flex: 1;
   padding: 10px 0;
 
-  gap: 100px;
 
   ul, li {
 font-size: 14px;
@@ -95,6 +111,11 @@ li:hover {
   transform: none;
 }
 
+@media (max-width: 768px) {
+min-width: 300px;
+padding-bottom: 30px;
+}
+
 `
 
 export const UlMenu = styled.div`
@@ -105,6 +126,7 @@ export const LiMenu = styled.div`
   a {
     text-decoration: none;
     color: inherit;
+    font-size: 14px;
   }
 `
 
@@ -113,6 +135,11 @@ export const Produtos = styled.div`
 ul {
 display: flex;
 flex-direction: column;
+}
+
+li {
+font-size: 14px;
+font-weight: 400;
 }
 `
 
