@@ -57,7 +57,70 @@ display: flex;
 justify-content: center;
 
 img {
-  width: 100px;
+  width: 80px;
+}
+`
+
+export const Center = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex: 1;
+  padding: 10px 0;
+
+
+  ul, li {
+gap: 0px;
+padding: 0px 5px;
+margin: 0px;
+align-items: flex-start;
+
+  }
+li:hover {
+  transform: none;
+}
+
+@media (max-width: 768px) {
+min-width: 300px;
+padding-bottom: 0px;
+
+h1 {
+  font-size: 14px;
+}
+}
+
+`
+
+export const UlMenu = styled.div`
+
+`
+
+export const LiMenu = styled.div`
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+  
+@media (max-width: 768px) {
+    font-size: 11px;
+  }
+}
+`
+
+export const Produtos = styled.div`
+
+ul {
+display: flex;
+flex-direction: column;
+}
+
+li {
+font-size: 14px;
+font-weight: 400;
+
+@media (max-width: 768px) {
+    font-size: 11px;
+  }
 }
 `
 export const Right = styled.div`
@@ -73,8 +136,10 @@ export const Right = styled.div`
   align-items: center;
   justify-content: center;
   padding-bottom: 30px;
+  min-width: 300px;
 
-    min-width: 300px;
+  h1 {  font-size: 14px;
+  }
 }
 
   ul {
@@ -86,60 +151,8 @@ export const Right = styled.div`
     list-style: none;
 
     @media (max-width: 768px) {
-
+    font-size: 11px;
 padding-bottom: 30px;
 }
   }
 `
-
-export const Center = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  flex: 1;
-  padding: 10px 0;
-
-
-  ul, li {
-font-size: 14px;
-gap: 0px;
-padding: 0px 5px;
-margin: 0px;
-align-items: flex-start;
-  }
-li:hover {
-  transform: none;
-}
-
-@media (max-width: 768px) {
-min-width: 300px;
-padding-bottom: 30px;
-}
-
-`
-
-export const UlMenu = styled.div`
-
-`
-
-export const LiMenu = styled.div`
-  a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 14px;
-  }
-`
-
-export const Produtos = styled.div`
-
-ul {
-display: flex;
-flex-direction: column;
-}
-
-li {
-font-size: 14px;
-font-weight: 400;
-}
-`
-
