@@ -183,6 +183,15 @@ align-items: center;
   h1 {
     font-size: 20px;
     padding-bottom: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+      width: 80%;
+
+ h1 {   
+       font-size: 16px;
+ }
   }
 
 `;

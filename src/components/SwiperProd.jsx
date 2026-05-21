@@ -13,10 +13,11 @@ const SwiperMod = ({ imagens = [] }) => {
         modules={[Navigation, Autoplay]}
         spaceBetween={20}
         breakpoints={{
-          768: { slidesPerView: 8 },
-          1024: { slidesPerView: 8 },
+        0:    { slidesPerView: 3, centeredSlides: false },
+    768:  { slidesPerView: 8, centeredSlides: true },
+    1024: { slidesPerView: 8, centeredSlides: true },
         }}
-        centeredSlides={true}
+
         loop={true}
         grabCursor={true}
         speed={800}
