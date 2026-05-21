@@ -82,7 +82,7 @@ li:hover {
 
 @media (max-width: 768px) {
 min-width: 300px;
-padding-bottom: 0px;
+padding-bottom: 80px;
 
 h1 {
   font-size: 14px;
@@ -137,6 +137,7 @@ export const Right = styled.div`
   justify-content: center;
   padding-bottom: 30px;
   min-width: 300px;
+  display: none;
 
   h1 {  font-size: 14px;
   }
